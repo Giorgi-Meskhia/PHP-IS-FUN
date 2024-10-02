@@ -6,6 +6,25 @@
     <title>PHP IS FUN</title>
 </head>
 <body>
+
+    <!-- ფუნქციების php-ს ჩართვა -->
+
+    <?php
+            include 'functions.php';
+        ?>
+        
+        <div class="form">
+            <form action="" method="POST">
+                <input type="text" name="name" class="input" placeholder="Name" required>
+                <input type="password" name="password" class="input" placeholder="Password" required>
+                <input type="password" name="repassword" class="input" placeholder="Repeat-Password" required>
+                <input type="submit" value="REGISTER" class="login">
+            </form>
+        </div>
+
+        <?php
+            register()
+        ?>
     
 </body>
 </html>
